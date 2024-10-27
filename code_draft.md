@@ -1,6 +1,6 @@
 
 
-#code for analysis of single cell RNAseq of mouse vomeronasal neuroepithelium 
+# code for analysis of single cell RNAseq of mouse vomeronasal neuroepithelium 
 ####10X sequencing requirements for 3' gene expression analysis V3.1 chemistry  
 
 | Read |	Read 1 |	i7 Index |	i5 Index| 	Read 2|
@@ -13,7 +13,7 @@ parallel --jobs 4 trim_galore --hardtrim5 28 -o ../trimmed_fastq ::: *_R1.fastq.
 parallel --jobs 4 trim_galore --hardtrim5 91 -o ../trimmed_fastq ::: *_R2.fastq.gz
 ```
 
-####Alignment of trimmed reads to the mm10reference genome:
+#### Alignment of trimmed reads to the mm10reference genome:
 Mouse mm10 reference genome and gene annotation file(gtf) was downloaded from ensembl. Xntrpc was removed as it is a read through transcript and interferes with the alignemnt of Trcp2 reads. More information on read through transcripts can be found [here](https://www.ensembl.info/2019/02/11/annotating-readthrough-transcription-in-ensembl/)
 
 We built\-4 a custom reference based on modified mm10 and used it for my analysis. As per 10x, alignment using cellranger need to be done separately for each sample in different well to avoid barcode clash
@@ -946,7 +946,7 @@ dev.off()
 
 ```
 
-Creating Shiny app
+### Creating Shiny app
 ```r
 library(Seurat)
 library(ShinyCell)
