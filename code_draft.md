@@ -1,7 +1,7 @@
 
 
 # code for analysis of single cell RNAseq of mouse vomeronasal neuroepithelium 
-####10X sequencing requirements for 3' gene expression analysis V3.1 chemistry  
+#### 10X sequencing requirements for 3' gene expression analysis V3.1 chemistry  
 
 | Read |	Read 1 |	i7 Index |	i5 Index| 	Read 2|
 -------|---------|-----------|----------|---------|
